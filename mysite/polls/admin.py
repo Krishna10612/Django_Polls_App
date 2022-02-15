@@ -9,7 +9,7 @@ from .models import Question,Choice
 #         (None,               {'fields': ['question_text']}),
 #         ('Date information', {'fields': ['pub_date']}),
 #     ]
-class ChoiceInline(admin.StackedInline):
+class ChoiceInline(admin.TabularInline):
     model = Choice
     extra = 3
 
